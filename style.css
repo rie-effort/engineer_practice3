@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-img-wrapper {
+  position: relative;
+}
+
+#header img {
+  max-width: 100%; 
+  vertical-align: bottom;
+}
+
+.container a {
+  display: block;
+}
+
+.flex {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding-top: 20px;
+  z-index: 3;
+}
+
+.flex h1 {
+  writing-mode: vertical-rl;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 10px 10px 0;
+  z-index: 4; /* テキストをさらに前面に */
+}
+
+.flex nav {
+  margin-right: 20px;
+  padding-top: 0;
+  align-self: flex-start;
+}
+
+nav {
+  writing-mode: vertical-rl;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  column-gap: x;
+}
+
+nav li {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+nav li:last-child {
+  margin-bottom: 0; /* 最後のアイテムの下のスペースを削除 */
+}
+
+.onlinestore {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  writing-mode: vertical-rl;
+}
+
+.onlinestore a {
+  display: block;
+  border: solid 1px #ccc;
+  padding: 10px 18px;
+}
+
+.onlinestore a:hover {
+  opacity: 0.7;
+}
+
+#news {
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#news h2 {
+  font-weight: normal;
+  writing-mode: vertical-rl;
+}
+
+#news .section-title {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+
+#news .section-title .en {
+  order: 2;
+  font-size: 15px;
+  margin-left: 10px;
+  padding-left:30px;
+  margin-top: -130px;
+}
+#news .section-title .ja {
+  order: 1;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+
+#news .list {
+  padding: 80px 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+}
+
+.list .item {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+
+  #news .list dt {
+    border-right: solid 1px #000; 
+  font-size: 0.75rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -270px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  }
+
+  #news .list dd {
+    border-right: solid 1px #000;
+    padding: 15px 30px;
+    margin: 0;
+    margin-right: -1px;
+    margin-bottom: -1px;
+  }
+  
+  #news .list dd:last-child {
+    border-left: solid 1px #000;
+  }
+
+  #products1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  
+  #products1 h2 {
+    writing-mode: vertical-rl;
+    font-weight: normal;
+    margin-left: 20px; /* 必要に応じて調整 */
+    margin-top: 40px;
+    padding-top: 25px;
+    padding-right: 30px;
+  }
+
+  #products1 .section-title .ja {
+    order: 1;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    margin-right: 10px;
+    margin-top: -20px;
+    margin-bottom: 18px;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  #products1 .section-title .en {
+    order: 2;
+    font-size: 15px;
+    margin-left: 10px;
+    padding-left:30px;
+  }
+  #products1 .img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #products1 .img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #products1 .img img {
+    width:850px; 
+    height: auto;
+    padding-top: 60px;
+    padding-left: 30px;
+    margin-right: 20px;
+  }
+
+  #products2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  #products2 h2 {
+    writing-mode: vertical-rl;
+    font-weight: normal;
+    margin-left: 20px; /* 必要に応じて調整 */
+    margin-top: 40px;
+    padding-top: 25px;
+    padding-right: 30px;
+  }
+
+  #products2 .section-title .ja {
+    order: 1;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    margin-right: 10px;
+    margin-top: -20px;
+    margin-bottom: 18px;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  #products2 .section-title .en {
+    order: 2;
+    font-size: 15px;
+    margin-left: 10px;
+    padding-left:30px;
+  }
+  #products2 .img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  #products2 .img img {
+    width:850px;
+    height: auto;
+    padding-top: 60px;
+    padding-left: 30px;
+    margin-right: 20px;
+  }
