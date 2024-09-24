@@ -41,7 +41,7 @@ a {
   font-size: 40px;
   font-weight: bold;
   margin: 0 10px 10px 0;
-  z-index: 4;
+  z-index: 4; /* テキストをさらに前面に */
 }
 
 .flex nav {
@@ -68,7 +68,7 @@ nav li {
 }
 
 nav li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0; /* 最後のアイテムの下のスペースを削除 */
 }
 
 .onlinestore {
@@ -173,7 +173,7 @@ nav li:last-child {
   #products1 h2 {
     writing-mode: vertical-rl;
     font-weight: normal;
-    margin-right: 150px;
+    margin-right: 150px; /* 必要に応じて調整 */
     margin-top: 40px;
     padding-top: 25px;
   }
@@ -304,9 +304,10 @@ nav li:last-child {
     width: 100%; 
     padding-bottom: 10px;
 }
-/* スマホ */
+
+/* スマホ用スタイル */
 @media screen and (max-width: 768px) {
-   .flex {
+  .flex {
     flex-direction: column;
     align-items: center;
   }
@@ -399,8 +400,8 @@ nav li:last-child {
   #news .list dd:last-child {
     border-right: none; 
   }
-  
-   #news .list .item:nth-child(n+4) {
+
+  #news .list .item:nth-child(n+4) {
     display: none; /* 4番目以降のアイテムを非表示 */
   }
 
@@ -429,7 +430,7 @@ nav li:last-child {
     position: relative;
     margin-top: -20px;
     left: 40px; 
-    bottom: 20px; 
+    bottom: 20px; /* Margin for separation */
     text-align: center;
   }
 
@@ -563,7 +564,7 @@ nav li:last-child {
   
     
     #footer .flex {
-      flex-direction: column; 
+      flex-direction: column; /* フレックスボックスの方向を縦に */
       align-items: center;
     }
   
