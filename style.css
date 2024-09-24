@@ -394,6 +394,10 @@ nav li:last-child {
     border-right: none; 
   }
 
+   #news .list .item:nth-child(n+4) {
+    display: none; /* 4番目以降のアイテムを非表示 */
+  }
+
   #products1 {
     flex-direction: row;
     justify-content: flex-end;
