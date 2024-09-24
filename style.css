@@ -304,8 +304,7 @@ nav li:last-child {
     width: 100%; 
     padding-bottom: 10px;
 }
-
-/* スマホ用スタイル */
+/* スマホ */
 @media screen and (max-width: 768px) {
   .flex {
     flex-direction: column;
@@ -374,7 +373,7 @@ nav li:last-child {
   #news .list {
       padding: 20px;
       padding-right: 220px;
-      margin-top: 20px;
+      margin-top: 60px;
   }
 
    #news .list dt {
@@ -404,21 +403,31 @@ nav li:last-child {
   #products1 .section-title {
     order: 1; 
     margin-right: 20px; 
-    margin-top: 40px;
+    margin-top: -120px;
+    margin-left: 20px;
+  }
+
+  #products1 .section-title .ja, #products2 .section-title .ja  {
+    font-size: 20px;
+  }
+
+  #products1 .section-title .en, #products2 .section-title .en {
+    font-size: 12px;
   }
 
   #products1 .text {
-    position: absolute;
+    position: relative;
+    margin-top: -20px;
     left: 40px; 
-    bottom: 20px;
+    bottom: 20px; 
     text-align: center;
   }
 
   #products1 .img img {
-    width: 650px;
+    width: 350px;
     height: auto;
-    padding-left: 80px;
-    margin-top: 30px;
+    margin-top: -180px;
+    margin-left: 10px;
   }
 
   #products2 {
@@ -427,37 +436,32 @@ nav li:last-child {
 
   #products2 .section-title {
     margin-left: 0; 
-    margin-top: 60px;
-    padding-top: 80px;  
+    margin-top: -30px;  
     margin-left: 30px;
   }
 
   #products2 .img img {
-    width: 650px; 
+    width: 350px; 
     height: auto;
     padding-top: 20px;
-    margin-top: -400px;
-    margin-left: 60px;
+    margin-top: -320px;
+    margin-left: 80px;
   }
 
   #products2 .text {
-    position: absolute; 
-    bottom: 80px;
-    text-align: center;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 250px;
+    text-align: center; 
+    margin-bottom: 0;
+    padding: 10px 30px;
   }
 
   #map {
-    position: relative;
-    top: 550px;
-    width: 100%;
-  }
-
-
-
-  #map iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
+      position: relative;
+      top: 0; 
+      width: 100%;
+      height: 300px;
   }
 
 
@@ -511,14 +515,26 @@ nav li:last-child {
       height: auto;
     }
 
+    #news .section-title .en {
+      font-size: 12px;
+    }
+
+    #news .section-title .ja {
+      font-size: 20px;
+      margin-left: 80px;
+    }
+
     #news .list {
       margin-right: -80px;
       margin-top: -70px;
+      height: auto;
     }
 
     #news .list dt {
       display: inline-block;
       border-right: solid 1px #000; 
+      padding-top: 10px; 
+      height: 300px;
     }
   
     #news .list dd {
@@ -528,8 +544,11 @@ nav li:last-child {
 
     #footer {
       height:auto;
-      margin-top: 550px;
-      bottom: 0;
+    }
+
+    #footer .info {
+      margin-right: 150px;
+      margin-top: -140px;
     }
   
     
