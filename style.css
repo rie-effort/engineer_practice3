@@ -306,7 +306,7 @@ nav li:last-child {
 }
 /* スマホ */
 @media screen and (max-width: 768px) {
-  .flex {
+   .flex {
     flex-direction: column;
     align-items: center;
   }
@@ -316,8 +316,14 @@ nav li:last-child {
     font-size: 30px;
   }
 
+  .container img {
+    width: 30px;
+  }
+
   .flex nav {
-    margin-right: 0;
+    display: flex;
+    margin-right:0;
+    font-weight: bold;
   }
 
   #header img {
@@ -393,7 +399,7 @@ nav li:last-child {
   #news .list dd:last-child {
     border-right: none; 
   }
-
+  
    #news .list .item:nth-child(n+4) {
     display: none; /* 4番目以降のアイテムを非表示 */
   }
