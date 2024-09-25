@@ -343,7 +343,7 @@ nav li:last-child {
   }
 
   #nav li {
-    margin: 10px 0;
+    margin-top: 20px; 
   } 
 
   #news {
