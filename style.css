@@ -329,6 +329,7 @@ nav li:last-child {
 
   #header img {
     max-width: 100%;
+    margin-bottom: -120px;
   }
 
   .onlinestore {
@@ -358,29 +359,24 @@ nav li:last-child {
   #news .section-title {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 30px;
   }
 
   #news .section-title .en {
-    margin-top: -50px;
-    margin-left: 0;
-    margin-right: 10px;
-    padding-left: 0;
-    order: 1;
+    display: none;
   }
 
   #news .section-title .ja {
     font-size: 25px;
-    margin-top: 10px;
     margin-right: 0;
-    padding-right: 0;
+    padding-right: 30px;
     order: 1;
   }
 
   #news .list {
-      padding: 20px;
+      padding-top: 20px;
       padding-right: 220px;
-      margin-top: 60px;
+      padding-bottom: 20px;
   }
 
    #news .list dt {
@@ -507,6 +503,10 @@ nav li:last-child {
     }
   
     
+    #products1 .section-title .en, #products2 .section-title .en {
+      display: none;
+    }
+
     #products1.section-title {
       font-size: 1.8rem; 
       padding-left: 40px; 
@@ -516,6 +516,7 @@ nav li:last-child {
       font-size: 1.8rem; 
       margin-right: 40px; 
     }
+
   
     
     #products1.img img {
@@ -524,12 +525,16 @@ nav li:last-child {
     }
 
     #products2.img img {
-      width: 200px;
+      width: 60%;
       height: auto;
     }
 
+    #news {
+      margin-top: 100px;
+    }
+
     #news .section-title .en {
-      font-size: 12px;
+        display: none;
     }
 
     #news .section-title .ja {
@@ -540,13 +545,11 @@ nav li:last-child {
     #news .list {
       margin-right: -80px;
       margin-top: -70px;
-      height: auto;
     }
 
     #news .list dt {
       display: inline-block;
-      border-right: solid 1px #000; 
-      padding-top: 10px; 
+      border-right: solid 1px #000;  
       height: 300px;
     }
   
@@ -554,6 +557,15 @@ nav li:last-child {
       display: inline-block;
       border-right: solid 1px #000; 
     } 
+
+    #news .list dd:last-child {
+      border-left: solid 1px #000;
+    }
+
+    #map {
+      position: relative;
+      margin-top: 60px; 
+  }
 
     #footer {
       height:auto;
