@@ -335,11 +335,11 @@ nav li:last-child {
   .onlinestore {
     left: 10px;
     bottom: 10px;
-  }
-
+  } 
   .onlinestore a {
-    padding: 10px 12px;
-    font-size: 12px;
+    height: 180px; 
+    font-size: 14px;
+    white-space: nowrap;
   }
 
   #nav ul {
@@ -493,9 +493,13 @@ nav li:last-child {
     align-items: flex-start;
   }
 
+  .footer-logo a {
+    width:40px;
+  }
+
   #footer .info {
     writing-mode: vertical-rl;
-    margin-right: 160px;
+    margin-right: 140px;
     margin-top: -150px;
   }
   }
